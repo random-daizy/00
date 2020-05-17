@@ -1,0 +1,44 @@
+
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #EBEFF8;
+	margin-bottom: 1000px;
+}
+
+#v0{
+  position: fixed;
+  top: 0 ;
+  left: 0 ;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+
+.video-wrapper{
+       width:100%;
+       height:100vh;
+       overflow: hidden;
+       position: absolute;
+       top: 0;
+       left: 0;
+}
+
+
+main{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+
+/*#scroll-button:hover {
+	box-shadow: 10px 10px 0 20px #2AD3C5;
+}
+*/

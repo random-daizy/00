@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<title> 00 </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" media="all" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+
+		<script src="src/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  var letters = $('#page_title').text();
+			  var nHTML = '';
+			  var i = 0;
+			  for(var letter of letters) {
+			    nHTML+="<span class='title-letter"+i+"'>"+letter+"</span>";
+			    i = ++i % 5;
+			  }
+			  $('#page_title').html(nHTML);
+			})
+
+			document.onscroll = function() {
+				var btn = document.getElementById('scroll-button');
+		        if (window.scrollY >= document.body.scrollHeight - 1000) {
+		            btn.style.display='none';
+		        }
+		        else {
+					btn.style.display='block';
+		        }
+
+		    }
+		</script>
+
+	</head>
+	<body>
+		<div id="set-height"></div>
+		<p id="time"></p>
+	    <div class="video-wrapper">
+			<video id="v0" tabindex="0" autobuffer="autobuffer" preload="auto">
+			    <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="images/toilet18.mp4"></source>
+			</video>
+	    </div>
+	    <audio id="audio1" src="sounds/brook.mp3"></audio>
+	    <audio id="audio2" src="sounds/quantic.mp3"></audio>
+	    <audio id="audio3" src="sounds/nightlite.mp3"></audio>
+	    <audio id="audio4" src="sounds/funky.mp3"></audio>
+	    <main>
+	    	<image id="scroll-button" onclick="javascript:window.scrollTo(0,document.body.scrollHeight);" style="position: fixed;
+     bottom: 50px;
+     right: 70px;" src="images/scroll.png"></image>
+	    </main>
+	    <!-- <main>
+		<h1 id="page_title"> Synesthesia </h1>
+		<div class="title" ><h2 class="title1"> Hearing colors and tasting sounds </h2></div>
+		<div class="container_left" id="container1">
+			<div id="chapter1" class="chapter">
+				<p class="opening_p opening_p1" onclick="play1()"> Can you taste sounds or visualize symphonies of color whenever you hear a song? If your answer to these is "yes," you may have a wonderful condition known as synesthesia, which you share with many great artists, writers, and musicians. </p>
+				<p> Writer Vladimir Nabokov had it, and he called it "color hearing." By his own account, Nabokov saw each letter in different colors, despite the fact that text was printed all-black on white paper. Interestingly, both his wife and his son shared this fascinating ability, though they each saw different palettes of color. </p>
+				<p> "My wife has this gift of seeing letters in color, too, but her colors are completely different We discovered one day that my son [...] sees letters in colors, too. Then we asked him to list his colors and we discovered that in one case, one letter which he sees as purple, or perhaps mauve, is pink to me and blue to my wife. This is the letter M. So the combination of pink and blue makes lilac in his case. Which is as if genes were painting in aquarelle." Vladimir Nabokov in an interview for the BBC in 1962. </p>
+				<p> Many other cultural personalities besides Nabokov have reported having a form of synesthesia, including painter Wassily Kandinsky, inventor Nikola Tesla, and composer Franz Liszt.</p>
+			</div>
+		</div>
+		<div class="title"><h2 class="title2"> What is synesthesia? </h2></div>
+		<div class="container_right">
+			<div id="chapter2" class="chapter">
+				<p class="opening_p opening_p2" onclick="play2()"> The word "synesthesia" is derived from Greek and literally means "concomitant sensations." People with this condition, often referred to as "synesthetes", experience a unique blending of two senses or perceptions. This may be sounds automatically coupled with tastes, sounds with colors, or written letters with colors. </p>
+				<p> There are actually various different types of synesthesia, and people who have one type might often also experience another. But how many different types of synesthesia are there? </p>
+				<p> Researchers explain that this is difficult to deduce. Since there are five traditionally accepted senses, sight, hearing, taste, touch, and smell, and synesthesia is characterized by the crossover of two senses or perceptions, there could be numerous combinations. </p>
+				<p> However, there are two most commonly reported types of synesthesia. The first is color-graphemic, in which letters, numbers, or geometric shapes are linked to colors or patterns, and the second is color-auditory synesthesia, in which various sounds immediately recall specific colors, shapes, or textures. </p>
+				<p> One synesthete who spoke to Medical News Today gave us a highly impressive description of her experience of color-auditory synesthesia. </p>
+				<p> "As far back as I can remember," she told MNT, "I would experience music on the radio as a colorful landscape of moving shapes in my head, whereas speech would invoke mental images of a single moving line of color, a bit like a floating stroke of spray paint, hanging in the air. [The sound produced by] each [musical] instrument has its own color... Flutes are sky-blue whereas an oboe is more indigo... The sound of a piano seems to me like iridescent white cubes moving around in clusters as though they're floating in water." </p>
+				<p> Like a number of other synesthetes, however, she also has another form of synesthesia: the color-graphemic kind, which causes her to experience numbers and letters in particular colors. </p>
+			</div>
+		</div>
+		<div class="title"><h2 class="title3"> How common is synesthesia? </h2></div>
+		<div class="container_left">
+			<div id="chapter3" class="chapter">
+				<p class="opening_p opening_p3" onclick="play3()">It is difficult to say how many people actually experience synesthesia, mainly because there is very little research that has aimed to address this question. Moreover, some people may not know that what they experience is unusual, and so they may not speak about it. Many synesthetes may not realize for a long time that their condition is unique. </p>
+				<p> Researchers at Boston University in Massachusetts have suggested that around "1 in every 100,000 people to 1 in every 5,000 people" have one or more forms of synesthesia. </p>
+				<p> A studyTrusted Source that was conducted in 2006 by several researchers based at the University of Sussex in the United Kingdom indicated that color-graphemic synesthesia may be experienced by just over 1 percent of individuals. </p>
+				<p> The study authors also concluded that this kind of perception may nevertheless be more common than we would have thought, saying that "the prevalence of synesthesia [seemed to be] 88 times higher than previously assumed."</p>
+				<p> The synesthete that MNT interviewed explained to us that she did not, in fact, realize for a long time that her condition was unique, having assumed that most people experience something similar. </p>
+				<p> "I always knew that my specific coloring of letters and numbers was personal to me, but presumed everyone else had a similar code of their own, and then at primary school, I realized not everyone saw colors and imagery in this way...but, it was only in university that I realized that it was a real minority of us who had synesthesia." </p>
+			</div>
+		</div>
+		<div class="title"><h2 class="title4"> Mechanisms and causes </h2></div>
+		<div class="container_right">
+			<div id="chapter4" class="chapter">
+				<p class="opening_p opening_p4" onclick="play4()">From a specialist point of view, synesthesia is defined as a neurological condition, as it changes a person's perception of, and interaction with, certain aspects of the surrounding world. </p>
+				<p> As some specialists will explain, the main characteristic of this condition, the association of two complementary sensations or perceptions, "arise spontaneously during development." These associations are also constant for synesthetes. That is, if the letter "A" recalls the color blue, for example, this perception will never change. </p>
+				<p> Some people with color-graphemic synesthesia report that a letter or number may evoke a color whose name it sounds like. So, "A" may trigger a vision of gray, and the number "5" may evoke "white." </p>
+				<p> So, what causes these intriguing perception cross-overs? Researchers do not always agree, and in fact, synesthesia may quite possibly arise via different mechanisms in different people. </p>
+				<p> Some studies have suggested that the condition is genetically inheritedTrusted Source, which may explain why Nabokov's son had color-graphemic synesthesia, like both of his parents. </p>
+				<p> However, research conducted in identical twinsTrusted Source in which one sibling of the pair has synesthesia while the other does not suggests that other factors may also be at play. </p>
+				<p> A paperTrusted Source that was published in the journal Nature Scientific Reports in 2014 by researchers from the University of Brighton in the U.K. proposes that early learning may be key in the development and continuity of synesthetic experiences. </p>
+			</div>
+		</div>
+		</main> -->
+	</body>
+	<script type="text/javascript">
+		var frameNumber = 0, // start video at frame 0
+		    // lower numbers = faster playback
+		    playbackConst = 500,
+		    // get page height from video duration
+		    setHeight = document.getElementById("set-height"),
+		    // select video element
+		    vid = document.getElementById('v0');
+		    // var vid = $('#v0')[0]; // jquery option
+
+		// dynamically set the page height according to video length
+		vid.addEventListener('loadedmetadata', function() {
+		  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+		});
+
+		// Use requestAnimationFrame for smooth playback
+		function scrollPlay(){
+		  	var frameNumber  = window.pageYOffset/playbackConst;
+			vid.currentTime  = frameNumber.toFixed(1);
+		  	window.requestAnimationFrame(scrollPlay);
+		}
+
+		var audio1 = document.getElementById("audio1");
+		var audio2 = document.getElementById("audio2");
+		var audio3 = document.getElementById("audio3");
+		var audio4 = document.getElementById("audio4");
+
+
+		function play1() {
+			if (audio1.paused && audio2.paused && audio3.paused && audio4.paused) {
+				audio1.play();
+				}
+				else {
+				if (audio1.paused) {
+					audio1.play();
+				}
+				else {
+					audio1.pause();
+				}
+				audio2.pause();
+				audio3.pause();
+				audio4.pause();
+			}
+	     }
+
+	      function play2() {
+			if (audio1.paused && audio2.paused && audio3.paused && audio4.paused) {
+				audio2.play();
+				}
+				else {
+				audio1.pause();
+				if (audio2.paused) {
+					audio2.play();
+				}
+				else {
+					audio2.pause();
+				}
+				audio3.pause();
+				audio4.pause();
+			}
+	      }
+
+	      function play3() {
+			if (audio1.paused && audio2.paused && audio3.paused && audio4.paused) {
+				audio3.play();
+				}
+				else {
+				audio1.pause();
+				audio2.pause();
+				if (audio3.paused) {
+					audio3.play();
+				}
+				else {
+					audio3.pause();
+				}
+				audio4.pause();
+			}
+	      }
+
+	      function play4() {
+			if (audio1.paused && audio2.paused && audio3.paused && audio4.paused) {
+				audio4.play();
+				}
+				else {
+					audio1.pause();
+				audio2.pause();
+				audio3.pause();
+				if (audio4.paused) {
+					audio4.play();
+				}
+				else {
+					audio4.pause();
+				}
+			}
+	      }
+
+		window.requestAnimationFrame(scrollPlay);
+	</script>
+</html>
